@@ -6,7 +6,7 @@ NODE_ENV = 'development'
 stages {
 stage('Checkout') {
 steps {
-git branch: "${env.BRANCH_NAME}", url: 'https://github.com/sashakuksa/node-js-sample'
+git branch: 'master', url: 'https://github.com/sashakuksa/node-js-sample'
 }
 }
 stage('Install Dependencies') {
